@@ -1,14 +1,8 @@
 <template>
     <div class="wrapper">
         <swiper :options="swiperOption">
-            <swiper-slide>
-                <img class="swiper-img" src="../../../../src/assets/images/swiper-01.jpg"/>
-            </swiper-slide>
-            <swiper-slide>
-                <img class="swiper-img" src="../../../../src/assets/images/swiper-02.jpg"/>
-            </swiper-slide>
-            <swiper-slide>
-                <img class="swiper-img" src="../../../../src/assets/images/swiper-03.jpg"/>
+            <swiper-slide v-for="item of swiperList" :key="item.id">
+                <img class="swiper-img" :src="item.imgUrl"/>
             </swiper-slide>
             <div class="swiper-pagination"  slot="pagination"></div>
         </swiper>
@@ -24,7 +18,12 @@ export default {
         pagination: '.swiper-pagination',
         // 循环轮播
         loop: true
-      }
+      },
+      swiperList: [
+        {id: '0001', imgUrl: require('../../../../src/assets/images/swiper-01.jpg')},
+        {id: '0002', imgUrl: require('../../../../src/assets/images/swiper-02.jpg')},
+        {id: '0003', imgUrl: require('../../../../src/assets/images/swiper-03.jpg')}
+      ]
     }
   }
 }
