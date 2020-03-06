@@ -1,64 +1,83 @@
 <template>
   <div class="icons">
-    <div class="icon">
-      <div class="icon-img">
-        <img class="icon-img-content" src="../../../../src/assets/images/icon-piao.png"/>
-      </div>
-      <p class="icon-desc">热门景点</p>
-    </div>
-    <div class="icon">
-      <div class="icon-img">
-        <img class="icon-img-content" src="../../../../src/assets/images/icon-package.png"/>
-      </div>
-      <p class="icon-desc">度假</p>
-    </div>
-    <div class="icon">
-      <div class="icon-img">
-        <img class="icon-img-content" src="../../../../src/assets/images/icon-flight.png"/>
-      </div>
-      <p class="icon-desc">机票</p>
-    </div>
-    <div class="icon">
-      <div class="icon-img">
-        <img class="icon-img-content" src="../../../../src/assets/images/icon-hotel.png"/>
-      </div>
-      <p class="icon-desc">酒店</p>
-    </div>
-    <div class="icon">
-      <div class="icon-img">
-        <img class="icon-img-content" src="../../../../src/assets/images/icon-gand.png"/>
-      </div>
-      <p class="icon-desc">自由行</p>
-    </div>
-    <div class="icon">
-      <div class="icon-img">
-        <img class="icon-img-content" src="../../../../src/assets/images/icon-time.png"/>
-      </div>
-      <p class="icon-desc">攻略</p>
-    </div>
-    <div class="icon">
-      <div class="icon-img">
-        <img class="icon-img-content" src="../../../../src/assets/images/icon-trun.png"/>
-      </div>
-      <p class="icon-desc">一日游</p>
-    </div>
-    <div class="icon">
-      <div class="icon-img">
-        <img class="icon-img-content" src="../../../../src/assets/images/icon-cream.png"/>
-      </div>
-      <p class="icon-desc">团购</p>
-    </div>
+    <swiper>
+      <swiper-slide v-for="(page, index) of pages" :key="index">
+        <div class="icon" v-for="item of page" :key="item.iconId">
+          <div class="icon-img">
+            <img class="icon-img-content" :src="item.iconUrl"/>
+          </div>
+          <p class="icon-desc">{{item.desc}}</p>
+        </div>
+      </swiper-slide>
+    </swiper>
   </div>
 </template>
 <script>
 export default {
-  name: 'HomeIcons'
+  name: 'HomeIcons',
+  data () {
+    return {
+      iconsList: [{
+        iconId: '001',
+        iconUrl: require('../../../../src/assets/images/icon-piao.png'),
+        desc: '热门景点'
+      }, {
+        iconId: '002',
+        iconUrl: require('../../../../src/assets/images/icon-flight.png'),
+        desc: '机票'
+      }, {
+        iconId: '003',
+        iconUrl: require('../../../../src/assets/images/icon-package.png'),
+        desc: '度假'
+      }, {
+        iconId: '004',
+        iconUrl: require('../../../../src/assets/images/icon-hotel.png'),
+        desc: '酒店'
+      }, {
+        iconId: '005',
+        iconUrl: require('../../../../src/assets/images/icon-trun.png'),
+        desc: '自由行'
+      }, {
+        iconId: '006',
+        iconUrl: require('../../../../src/assets/images/icon-cream.png'),
+        desc: '攻略'
+      }, {
+        iconId: '007',
+        iconUrl: require('../../../../src/assets/images/icon-strategy.png'),
+        desc: '一日游'
+      }, {
+        iconId: '008',
+        iconUrl: require('../../../../src/assets/images/icon-place.png'),
+        desc: '跟团游'
+      }, {
+        iconId: '009',
+        iconUrl: require('../../../../src/assets/images/icon-love.png'),
+        desc: '泡温泉'
+      }, {
+        iconId: '010',
+        iconUrl: require('../../../../src/assets/images/icon-phone.png'),
+        desc: '门票'
+      }]
+    }
+  },
+  computed: {
+    pages () {
+      const pages = []
+      this.iconsList.forEach((item, index) => {
+        const page = Math.floor(index / 8)
+        if (!pages[page]) {
+          pages[page] = []
+        }
+        pages[page].push(item)
+      })
+      return pages
+    }
+  }
 }
 </script>
 <style lang="stylus" scoped>
   @import '~styles/varibles.styl'
-  .icons
-    overflow: hidden
+  .icons >>> .swiper-container
     height: 0
     padding-bottom: 50%
     .icon
