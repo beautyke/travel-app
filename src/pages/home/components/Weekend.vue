@@ -2,13 +2,13 @@
   <div>
     <div class="weekend-title">周末去哪儿</div>
     <ul>
-      <li class="weekend-item border-bottom" v-for="item of recommendList" :key="item.recId">
+      <li class="weekend-item border-bottom" v-for="item of weekendList" :key="item.weekId">
         <div class="week-img-wrapper">
-          <img class="week-img" :src="item.recUrl" />
+          <img class="week-img" :src="item.weekUrl" />
         </div>
         <div class="week-info">
-          <p class="week-title">{{item.recTitle}}</p>
-          <p class="week-desc">{{item.recDesc}}</p>
+          <p class="week-title">{{item.weekTitle}}</p>
+          <p class="week-desc">{{item.weekDesc}}</p>
         </div>
       </li>
     </ul>
@@ -20,21 +20,21 @@ export default {
   name: 'HomeWeekend',
   data () {
     return {
-      recommendList: [{
-        recId: '00001',
-        recUrl: require('../../../../src/assets/images/weekend-01.jpg'),
-        recTitle: '东京',
-        recDesc: '💎欢乐畅想💎日本东京半自助5日游💎东京+横滨+富士山+镰仓+江之岛神社,泗乎太安逸.'
+      weekendList: [{
+        weekId: '00001',
+        weekUrl: require('../../../../src/assets/images/weekend-01.jpg'),
+        weekTitle: '东京',
+        weekDesc: '💎欢乐畅想💎日本东京半自助5日游💎东京+横滨+富士山+镰仓+江之岛神社,泗乎太安逸.'
       }, {
-        recId: '00002',
-        recUrl: require('../../../../src/assets/images/weekend-02.jpg'),
-        recTitle: '罗马',
-        recDesc: '德法意瑞12-14天｜含小费｜罗马深度游+罗浮宫+莎士比亚书店｜赠意式特色餐.'
+        weekId: '00002',
+        weekUrl: require('../../../../src/assets/images/weekend-02.jpg'),
+        weekTitle: '罗马',
+        weekDesc: '德法意瑞12-14天｜含小费｜罗马深度游+罗浮宫+莎士比亚书店｜赠意式特色餐.'
       }, {
-        recId: '00003',
-        recUrl: require('../../../../src/assets/images/weekend-03.jpg'),
-        recTitle: '日本',
-        recDesc: '早定优惠赏樱花大阪+京都6天自由行正点航班✔酒店靠近地铁 赠WIFI+意外险.'
+        weekId: '00003',
+        weekUrl: require('../../../../src/assets/images/weekend-03.jpg'),
+        weekTitle: '日本',
+        weekDesc: '早定优惠赏樱花大阪+京都6天自由行正点航班✔酒店靠近地铁 赠WIFI+意外险.'
       }]
     }
   }

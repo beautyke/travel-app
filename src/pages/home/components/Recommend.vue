@@ -34,16 +34,6 @@ export default {
         recUrl: require('../../../../src/assets/images/recommend-03.jpg'),
         recTitle: '丽江',
         recDesc: '不负嵊夏好时光，泗乎太安逸.'
-      }, {
-        recId: '00004',
-        recUrl: require('../../../../src/assets/images/recommend-04.jpg'),
-        recTitle: '巴厘岛',
-        recDesc: '不负嵊夏好时光，泗乎太安逸.'
-      }, {
-        recId: '00005',
-        recUrl: require('../../../../src/assets/images/recommend-05.jpg'),
-        recTitle: '成都',
-        recDesc: '不负嵊夏好时光，泗乎太安逸.'
       }]
     }
   }
