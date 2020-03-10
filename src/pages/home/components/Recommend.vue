@@ -17,25 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        recId: '00001',
-        recUrl: require('../../../../src/assets/images/recommend-01.jpg'),
-        recTitle: '重庆',
-        recDesc: '不负嵊夏好时光,泗乎太安逸.'
-      }, {
-        recId: '00002',
-        recUrl: require('../../../../src/assets/images/recommend-02.jpg'),
-        recTitle: '泰国',
-        recDesc: '不负嵊夏好时光，泗乎太安逸.'
-      }, {
-        recId: '00003',
-        recUrl: require('../../../../src/assets/images/recommend-03.jpg'),
-        recTitle: '丽江',
-        recDesc: '不负嵊夏好时光，泗乎太安逸.'
-      }]
-    }
+  props: {
+    recommendList: Array
   }
 }
 </script>

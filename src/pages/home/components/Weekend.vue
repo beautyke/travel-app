@@ -18,25 +18,8 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data () {
-    return {
-      weekendList: [{
-        weekId: '00001',
-        weekUrl: require('../../../../src/assets/images/weekend-01.jpg'),
-        weekTitle: '东京',
-        weekDesc: '💎欢乐畅想💎日本东京半自助5日游💎东京+横滨+富士山+镰仓+江之岛神社,泗乎太安逸.'
-      }, {
-        weekId: '00002',
-        weekUrl: require('../../../../src/assets/images/weekend-02.jpg'),
-        weekTitle: '罗马',
-        weekDesc: '德法意瑞12-14天｜含小费｜罗马深度游+罗浮宫+莎士比亚书店｜赠意式特色餐.'
-      }, {
-        weekId: '00003',
-        weekUrl: require('../../../../src/assets/images/weekend-03.jpg'),
-        weekTitle: '日本',
-        weekDesc: '早定优惠赏樱花大阪+京都6天自由行正点航班✔酒店靠近地铁 赠WIFI+意外险.'
-      }]
-    }
+  props: {
+    weekendList: Array
   }
 }
 </script>
@@ -51,7 +34,7 @@ export default {
   .week-img-wrapper
     overflow: hidden
     height: 0
-    padding-bottom: 33.9%
+    padding-bottom: 66%
     .week-img
       width: 100%
   .week-info

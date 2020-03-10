@@ -4,49 +4,84 @@
     "city": "北京",
     "swiperList": [{
       "id": "0001",
-      "imgUrl": "require('../../../../src/assets/images/swiper-01.jpg')"
+      "imgUrl": "./static/images/swiper-01.jpg"
     }, {
       "id": "0002",
-      "imgUrl": "require('../../../../src/assets/images/swiper-02.jpg')"
+      "imgUrl": "./static/images/swiper-02.jpg"
     }, {
-      "id": "0002",
-      "imgUrl": "require('../../../../src/assets/images/swiper-02.jpg')"
+      "id": "0003",
+      "imgUrl": "./static/images/swiper-02.jpg"
     }],
-    "iconList": [{
+    "recommendList": [{
       "recId": "00001",
-      "recUrl": "require('../../../../src/assets/images/recommend-01.jpg')",
+      "recUrl": "./static/images/recommend-01.jpg",
       "recTitle": "重庆",
       "recDesc": "不负嵊夏好时光,泗乎太安逸."
     }, {
       "recId": "00002",
-      "recUrl": "require('../../../../src/assets/images/recommend-02.jpg')",
+      "recUrl": "./static/images/recommend-02.jpg",
       "recTitle": "重庆",
       "recDesc": "不负嵊夏好时光,泗乎太安逸."
     }, {
       "recId": "00003",
-      "recUrl": "require('../../../../src/assets/images/recommend-03.jpg')",
+      "recUrl": "./static/images/recommend-03.jpg",
       "recTitle": "重庆",
       "recDesc": "不负嵊夏好时光,泗乎太安逸."
     }],
-    "recommendList": [{
-        "id": "0001",
-        "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
-        "title": "故宫",
-        "desc": "东方宫殿建筑代表，世界宫殿建筑典范"
+    "iconsList": [{
+      "iconId": "001",
+      "iconUrl": "./static/images/icon-piao.png",
+      "desc": "热门景点"
+      }, {
+        "iconId": "002",
+        "iconUrl": "./static/images/icon-flight.png",
+        "desc": "热门景点"
+      }, {
+        "iconId": "003",
+        "iconUrl": "./static/images/icon-piao.png",
+        "desc": "热门景点"
+      }, {
+        "iconId": "004",
+        "iconUrl": "./static/images/icon-piao.png",
+        "desc": "热门景点"
+      }, {
+        "iconId": "005",
+        "iconUrl": "./static/images/icon-piao.png",
+        "desc": "热门景点"
+      }, {
+        "iconId": "006",
+        "iconUrl": "./static/images/icon-piao.png",
+        "desc": "热门景点"
+      }, {
+        "iconId": "007",
+        "iconUrl": "./static/images/icon-piao.png",
+        "desc": "热门景点"
+      }, {
+        "iconId": "008",
+        "iconUrl": "./static/images/icon-piao.png",
+        "desc": "热门景点"
+      }, {
+        "iconId": "009",
+        "iconUrl": "./static/images/icon-piao.png",
+        "desc": "热门景点"
+      }, {
+        "iconId": "010",
+        "iconUrl": "./static/images/icon-piao.png",
+        "desc": "热门景点"
       }],
     "weekendList":  [{
-      "WeekId": "00001",
-      "weekUrl": "../../../../src/assets/images/weekend-01.jpg",
+      "WeekId": "01",
+      "weekUrl": "./static/images/weekend-01.jpg",
       "weekTitle": "东京",
       "weekDesc": "💎欢乐畅想💎日本东京半自助5日游💎东京+横滨+富士山+镰仓+江之岛神社,泗乎太安逸."
     }, {
-      "weekId": "00002",
-      "weekUrl": "require('../../../../src/assets/images/weekend-02.jpg')",
+      "weekId": "02",
+      "weekUrl": "./static/images/weekend-02.jpg",
       "weekTitle": "日本",
       "weekDesc": "早定优惠赏樱花大阪+京都6天自由行正点航班✔酒店靠近地铁 赠WIFI+意外险."
-    }, {
-      "weekId": "00003",
-      "weekUrl": "require('../../../../src/assets/images/weekend-03.jpg')",
+    },  {
+      "weekId": "03",
+      "weekUrl": "./static/images/weekend-03.jpg",
       "weekTitle": "罗马",
       "weekDesc": "德法意瑞12-14天｜含小费｜罗马深度游+罗浮宫+莎士比亚书店｜赠意式特色餐."
     }]
