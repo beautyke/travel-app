@@ -20,13 +20,13 @@
     }, {
       "recId": "00002",
       "recUrl": "./static/images/recommend-02.jpg",
-      "recTitle": "重庆",
-      "recDesc": "不负嵊夏好时光,泗乎太安逸."
+      "recTitle": "泰国",
+      "recDesc": "泰国，带娃出行与幸福同行"
     }, {
       "recId": "00003",
       "recUrl": "./static/images/recommend-03.jpg",
-      "recTitle": "重庆",
-      "recDesc": "不负嵊夏好时光,泗乎太安逸."
+      "recTitle": "丽江",
+      "recDesc": "驾一叶扁舟，寻瓯江往事"
     }],
     "iconsList": [{
       "iconId": "001",
@@ -35,39 +35,43 @@
       }, {
         "iconId": "002",
         "iconUrl": "./static/images/icon-flight.png",
-        "desc": "热门景点"
+        "desc": "机票"
       }, {
         "iconId": "003",
-        "iconUrl": "./static/images/icon-piao.png",
-        "desc": "热门景点"
+        "iconUrl": "./static/images/icon-cream.png",
+        "desc": "周末游"
       }, {
         "iconId": "004",
-        "iconUrl": "./static/images/icon-piao.png",
-        "desc": "热门景点"
+        "iconUrl": "./static/images/icon-hotel.png",
+        "desc": "酒店民宿"
       }, {
         "iconId": "005",
-        "iconUrl": "./static/images/icon-piao.png",
-        "desc": "热门景点"
+        "iconUrl": "./static/images/icon-love.png",
+        "desc": "周边游"
       }, {
         "iconId": "006",
-        "iconUrl": "./static/images/icon-piao.png",
-        "desc": "热门景点"
+        "iconUrl": "./static/images/icon-package.png",
+        "desc": "度假"
       }, {
         "iconId": "007",
-        "iconUrl": "./static/images/icon-piao.png",
-        "desc": "热门景点"
-      }, {
-        "iconId": "008",
-        "iconUrl": "./static/images/icon-piao.png",
-        "desc": "热门景点"
+        "iconUrl": "./static/images/icon-strategy.png",
+        "desc": "旅游团购"
       }, {
         "iconId": "009",
-        "iconUrl": "./static/images/icon-piao.png",
-        "desc": "热门景点"
+        "iconUrl": "./static/images/icon-trun.png",
+        "desc": "攻略"
+      }, {
+        "iconId": "009",
+        "iconUrl": "./static/images/icon-rank.png",
+        "desc": "排行榜"
       }, {
         "iconId": "010",
-        "iconUrl": "./static/images/icon-piao.png",
-        "desc": "热门景点"
+        "iconUrl": "./static/images/icon-phone.png",
+        "desc": "自由行"
+      }, {
+        "iconId": "011",
+        "iconUrl": "./static/images/icon-place.png",
+        "desc": "一日游"
       }],
     "weekendList":  [{
       "WeekId": "01",
