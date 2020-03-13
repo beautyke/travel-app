@@ -2,8 +2,8 @@
   <div>
     <city-header></city-header>
     <city-search></city-search>
-    <city-list :cities="cities" :hotCities="hotCities"></city-list>
-    <city-alphabet :cities="cities"></city-alphabet>
+    <city-list :cities="cities" :hotCities="hotCities" :letter="letter"></city-list>
+    <city-alphabet :cities="cities" @change="handleLetterChange"></city-alphabet>
   </div>
 </template>
 
@@ -25,7 +25,8 @@ export default {
   data () {
     return {
       cities: {},
-      hotCities: []
+      hotCities: [],
+      letter: ''
     }
   },
   // 在methods中定义这个方法，发一个ajax请求，返回值是一个promise。然后在写一个方法接收，就可以收到模拟数据的结果。
@@ -41,6 +42,9 @@ export default {
         this.cities = data.cities
         this.hotCities = data.hotCities
       }
+    },
+    handleLetterChange (letter) {
+      this.letter = letter
     }
   },
   // 生命周期函数里面，写一个方法调用
