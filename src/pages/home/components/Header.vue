@@ -3,17 +3,14 @@
      <div class="header-left"><div class="iconfont back-icon">&#xe624;</div></div>
      <div class="header-input"><span class="iconfont">&#xe632;</span>输入城市/景点/游玩主题</div>
      <router-link to='/city'>
-       <div class="header-right">{{this.city}}<span class="iconfont arrow-icon">&#xe600;</span></div>
+       <div class="header-right">{{this.$store.state.city}}<span class="iconfont arrow-icon">&#xe600;</span></div>
      </router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HomeHeader',
-  props: {
-    city: String
-  }
+  name: 'HomeHeader'
 }
 </script>
 
@@ -41,7 +38,7 @@ export default {
       border-radius: .1rem
       color: #ccc
     .header-right
-      width: 1.24rem
+      width: 1.8rem
       float: right
       text-align: center
       color: #fff

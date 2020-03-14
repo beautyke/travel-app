@@ -5,7 +5,13 @@
     </div>
     <div class="search-content" ref="search" v-show="keyword">
       <ul>
-        <li class="search-item border-bottom" v-for="item of list" v-bind:key="item.id">{{item.name}}</li>
+        <li
+          class="search-item border-bottom"
+          v-for="item of list"
+          v-bind:key="item.id"
+          @click="handleCityClick(item.name)">
+          {{item.name}}
+        </li>
         <li class="search-item border-bottom" v-show="hasNodata">没有找到匹配数据</li>
       </ul>
     </div>
@@ -55,6 +61,14 @@ export default {
   },
   mounted () {
     this.scroll = new BScroll(this.$refs.search)
+  },
+  methods: {
+    handleCityClick (city) {
+      // 派发一个changeCity的action，然后把city传过去
+      this.$store.dispatch('changeCity', city)
+      // 点击城市跳回首页
+      this.$router.push('/')
+    }
   }
 }
 </script>
