@@ -1,0 +1,25 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "重庆",
+    "bannerImg": "./static/images/recommend-02.jpg",
+    "gallaryImgs": ["./static/images/recommend-02.jpg", "./static/images/recommend-01.jpg"],
+    "categoryList": [{
+        "title": "成人票",
+        "children": [{
+          "title": "成人三馆联票",
+          "children": [{
+            "title": "成人三馆联票 - 某一连锁店销售"
+          }]
+        },{
+          "title": "成人五馆联票"
+        }]
+      }, {
+        "title": "学生票"
+      }, {
+        "title": "儿童票"
+      }, {
+        "title": "特惠票"
+      }]
+  }
+}
